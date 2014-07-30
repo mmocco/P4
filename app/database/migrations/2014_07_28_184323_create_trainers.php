@@ -13,6 +13,7 @@ class CreateTrainers extends Migration {
 	public function up()
 	{
 		//
+Schema::create('trainers', function($table) {
 	$table->increments('id');
 	$table->string('name');
 	$table->string('pic');
@@ -24,7 +25,7 @@ class CreateTrainers extends Migration {
 	$table->string('college');
 	$table->integer('wage');	
 	$table->timestamps();
-
+	});
 	}
 
 	/**

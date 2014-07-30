@@ -4,6 +4,7 @@
 	"keywords": ["framework", "laravel"],
 	"license": "MIT",
 	"require": {
+		"twbs/bootstrap": "3.2.*@dev",
 		"paste/pre": "dev-master",
 		"laravel/framework": "4.2.*"
 	},
