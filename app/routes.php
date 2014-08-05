@@ -24,6 +24,21 @@ Route::get('/profile', function(){
 	return View::make('profile');
 });
 
+Route::post('/profile', function () {
+
+	$trainer = new Trainer();
+
+	$trainer->name = Input::get('name');
+	$trainer->sport = Input::get('sport');
+	$trainer->accomplishments = Input::get('accomplishments');
+	$trainer->experience = Input::get('experience');
+
+	$trainer->save();
+
+	return View::make('fillprofile');
+});
+
+
 Route::get('test', function() {
     # Instantiate a new Book model class
     $trainer = new Trainer();
