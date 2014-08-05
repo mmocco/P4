@@ -19,10 +19,34 @@ Route::get('/', function()
 
 Route::get('/login', 'UserController@getLogin');
 
+Route::get('/profile', function(){
 
-Route::get('profile', function() {
-	
 	return View::make('profile');
+});
+
+Route::get('test', function() {
+    # Instantiate a new Book model class
+    $trainer = new Trainer();
+
+/*        $table->increments('id');
+        $table->string('name');
+        $table->string('pic');
+        $table->integer('age');
+        $table->string('gradelvl');
+        $table->string('sport');
+        $table->text('accomplishments');
+        $table->text('experience');
+        $table->string('college');
+        $table->integer('wage');
+        $table->timestamps();
+*/ 
+    # Set 
+    $trainer->name = 'JP OConner';    //how do I take this information as user input?
+
+    # This is where the Eloquent ORM magic happens
+    $trainer->save();
+
+    return 'A new book has been added! Check your database to see...';
 
 });
 

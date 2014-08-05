@@ -21,6 +21,7 @@ Welcome
 
 <body> 
  
+<br><br><br>
 	<div class="page-header">
   		<h1>Trainers Available <small>College Athletes</small></h1>
 	</div>

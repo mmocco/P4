@@ -1,7 +1,8 @@
 <?php
 
 class UserController extends BaseController {
-
+	
+    protected $layout = '_master';
 
     public function __construct() {
         # Put anything here that should happen before any of the other actions
@@ -24,7 +25,7 @@ class UserController extends BaseController {
 
     # This is an action...
     public function getLogin() {
-
+	echo "test";
 
     }
 
