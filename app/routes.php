@@ -17,6 +17,8 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
+Route::get('/login', 'UserController@getLogin');
+
 
 Route::get('profile', function() {
 	
@@ -29,8 +31,9 @@ Route::get('mysql-test', function() {
     # Use the DB component to select all the databases
     $results = DB::select('SHOW DATABASES;');
 
+
     # If the "Pre" package is not installed, you should output using print_r instead
-    return Pre::render($results);
+    print_r($results);
 
 });
 

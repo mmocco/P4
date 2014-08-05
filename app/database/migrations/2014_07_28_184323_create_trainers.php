@@ -12,7 +12,6 @@ class CreateTrainers extends Migration {
 	 */
 	public function up()
 	{
-		//
 Schema::create('trainers', function($table) {
 	$table->increments('id');
 	$table->string('name');
@@ -35,7 +34,6 @@ Schema::create('trainers', function($table) {
 	 */
 	public function down()
 	{
-		//
 		Schema::drop('trainers');
 	}
 
