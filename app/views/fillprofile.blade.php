@@ -26,28 +26,23 @@ Welcome
   		<h1>Trainers Available <small>College Athletes</small></h1>
 	</div>
 
-	<?php $trainer = Trainer::all();  ?>
+<!--
+
 <h1 class="centertext">
-	{{ $trainer['name'] }}
+	{{-- $trainer['name'] --}}
 </h1>
 <h2 class="centertext">
-	{{ $trainer['location'] }}
+	{{-- $trainer['location'] --}}
 </h2>
 <p class="centertext">
-	{{ $trainer['acomplishments'] }} <br>
+	{{-- $trainer['acomplishments'] --}} <br>
 </p>
 <p class="centertext">
-	{{ $trainer['experience'] }} <br>
+	{{-- $trainer['experience'] --}} <br>
 </p>
 
-</div>
-</div>
 
-
-
-{{-- @foreach ($trainers as $trainer)
-    <p>This is user {{ $trainer->id }}</p>
---}}
+    <p>This is user {{-- $trainer->id --}}</p>
 <div class="row">
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
@@ -60,12 +55,10 @@ Welcome
     </div>
   </div>
 </div>
-{{--
-@endforeach
---}}
+-->
 
 	<div class = 'fillform'>
-{{ Form::open(["url" => "/profile","method" => "post") }}
+{{ Form::open(array ('url' => '/profile','method' => 'post')) }}
 	{{ Form::label("name", "Name") }}
 	<br>
 	{{ Form::text("name", Input::old("name"), ["placeholder" => "John Smith"]) }}
@@ -74,9 +67,9 @@ Welcome
 	<br>
 	{{ Form::text("sport") }}
 	<br>
-	{{ Form::label("acomplishments", "Acomplishments") }}
+	{{ Form::label("accomplishments", "Acomplishments") }}
 	<br>
-	{{ Form::textarea("acomplishments")  }}
+	{{ Form::textarea("accomplishments")  }}
 	<br>
 	{{ Form::label("experience", "Experience") }}
 	<br>

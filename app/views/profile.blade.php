@@ -26,8 +26,7 @@ Welcome
   		<h1>Trainers Available <small>College Athletes</small></h1>
 	</div>
 
-{{-- @foreach ($trainers as $trainer)
-    <p>This is user {{ $trainer->id }}</p>
+<!--
 
 
 
@@ -44,25 +43,25 @@ Welcome
   </div>
 </div>
 
-@endforeach
---}}
+
+-->
 
     <div class = 'fillform'>
 {{ Form::open(array('url' => '/profile', 'method' => 'POST')) }}
 
-        {{ Form::label("name", "Name") }}
+        {{ Form::label("Name") }}
         <br>
         {{ Form::text("name", Input::old("name"), ["placeholder" => "John Smith"]) }}
         <br>
-        {{ Form::label("sport", "Sport") }}
+        {{ Form::label("Sport") }}
         <br>
         {{ Form::text("sport") }}
         <br>
-        {{ Form::label("acomplishments", "Acomplishments") }}
+        {{ Form::label("Accomplishments") }}
         <br>
-        {{ Form::textarea("acomplishments")  }}
+        {{ Form::textarea("accomplishments")  }}
         <br>
-        {{ Form::label("experience", "Experience") }}
+        {{ Form::label("Experience") }}
         <br>
         {{ Form::textarea("experience")  }}
         <br>

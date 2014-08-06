@@ -24,7 +24,7 @@ Route::get('/profile', function(){
 	return View::make('profile');
 });
 
-Route::post('/profile', function () {
+Route::post('/profile/', function () {
 
 	$trainer = new Trainer();
 
@@ -43,7 +43,7 @@ Route::get('test', function() {
     # Instantiate a new Book model class
     $trainer = new Trainer();
 
-/*        $table->increments('id');
+/*      $table->increments('id');
         $table->string('name');
         $table->string('pic');
         $table->integer('age');
