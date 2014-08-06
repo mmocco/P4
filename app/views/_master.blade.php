@@ -15,6 +15,7 @@
 </head>
 <body>
 
+
     @if(Session::get('flash_message'))
 <div class="alert alert-info"> 
   <button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -25,7 +26,7 @@
 
 
 <div class="navbar navbar-wrapper">
-  <div class="container">
+  <div class="container mynav">
     <div class="navbar navbar-inverse navbar-static-top">
       
         <div class="navbar-header">

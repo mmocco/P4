@@ -3,7 +3,6 @@
 /* BOOTSTRAP 3.x GLOBAL STYLES
 -------------------------------------------------- */
 body {
-  padding-bottom: 40px;
   color: #5a5a5a;
 }
 
@@ -27,9 +26,32 @@ body {
   left: 0;
   right: 0;
   z-index: 10;
+  border-bottom: 2px solid #a0ea10;
+  padding-top: 40px !important; 
+  margin-top: 0px !important;
 }
 
+.navbar-collapse{
+	height: inherit;
+}
 
+.mynav {
+list-style-type: none;
+position: relative;
+display: block;
+font-size: 18px;
+font-family: Verdana, Helvetica, Arial, sans-serif;
+margin: 0;
+padding: 0;
+zoom: 1;
+width:auto;
+
+}
+
+.navbar {
+min-height: 60px !important;
+margin-bottom: 0px !important;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
