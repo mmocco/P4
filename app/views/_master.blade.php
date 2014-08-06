@@ -15,7 +15,16 @@
 </head>
 <body>
 
-<div class="navbar-wrapper">
+    @if(Session::get('flash_message'))
+<div class="alert alert-info"> 
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+	{{ Session::get('flash_message') }}
+</div>
+    @endif
+
+
+
+<div class="navbar navbar-wrapper">
   <div class="container">
     <div class="navbar navbar-inverse navbar-static-top">
       
@@ -25,15 +34,21 @@
 	      <span class="icon-bar"></span>
 	      <span class="icon-bar"></span>
 	    </a>
-        <a class="navbar-brand" href="/">FloTrain</a>
+        <a class="navbar-brand" href="/"> FloTrain</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="http://www.bootply.com" target="ext">About</a></li>
-            <li><a href="/index.php/profile">Profile</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="/index.php/profile">Your Profile</a></li>
+	    @if(Auth::check())
+		<li><a href='/index.php/logout'>Log out {{ Auth::user()->email; }}</a></li>
+	    @else 
+		<li><a href='/index.php/signup'>Sign up</a></li>
+		<li><a href='/index.php/login'>Log in</a></li>
+	    @endif
           </ul>
         </div>
+
 
     </div>
   </div><!-- /container -->
