@@ -16,15 +16,12 @@ class CreateTrainersTable extends Migration {
         $table->increments('id');
         $table->string('name');
         $table->string('pic');
-        $table->integer('age');
-        $table->string('gradelvl');
         $table->string('sport');
         $table->text('accomplishments');
         $table->text('experience');
-        $table->string('college');
-        $table->integer('wage');
         $table->timestamps();
-        });
+
+       });
 	}
 
 	/**

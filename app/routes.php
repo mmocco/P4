@@ -17,6 +17,26 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
+Route::get('/technique', function () {
+
+	$trainer= Trainer::first();
+
+	
+	return View::make('technique')
+		->withKey($trainer);
+
+});
+
+Route::post('/technique', function () {
+
+	$trainer= Trainer::first();
+	$trainer->review = Input::get('review');
+
+	
+	return View::make('technique')
+		->withKey($trainer);
+
+});
 
 Route::get('/profile',
     array(
@@ -36,7 +56,7 @@ Route::post('/profile/',
 	$trainer->sport = Input::get('sport');
 	$trainer->accomplishments = Input::get('accomplishments');
 	$trainer->experience = Input::get('experience');
-
+	$trainer->comment()->associate(Input::get('comment'));
 	$trainer->save();
 
 	return View::make('fillprofile');

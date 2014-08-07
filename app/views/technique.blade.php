@@ -26,8 +26,6 @@ Welcome
   		<h1>Trainers Available <small>College Athletes</small></h1>
 	</div>
 
-<!--
-
 
 
 <div class="row">
@@ -42,32 +40,8 @@ Welcome
     </div>
   </div>
 </div>
-
-
--->
-
-    <div class = 'fillform'>
-{{ Form::open(array('url' => '/profile', 'method' => 'POST')) }}
-
-        {{ Form::label("Name") }}
-        <br>
-        {{ Form::text("name", Input::old("name"), ["placeholder" => "John Smith"]) }}
-        <br>
-        {{ Form::label("Sport") }}
-        <br>
-        {{ Form::text("sport") }}
-        <br>
-        {{ Form::label("Accomplishments") }}
-        <br>
-        {{ Form::textarea("accomplishments")  }}
-        <br>
-        {{ Form::label("Experience") }}
-        <br>
-        {{ Form::textarea("experience")  }}
-        <br>
-        {{ Form::submit("Save") }}
-{{ Form::close() }}
-        </div>
+		{{ $trainer->name; }}
+		{{ $trainer->review; }}
 
 
 </body>
