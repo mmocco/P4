@@ -61,11 +61,11 @@ Welcome
         <br>
         {{ Form::text("sport") }}
         <br>
-        {{ Form::label("Accomplishments") }}
+        {{ Form::label("Accomplishments and Experience:  ") }}
         <br>
         {{ Form::textarea("accomplishments")  }}
         <br>
-        {{ Form::label("Experience") }}
+        {{ Form::label("Contact information and Pricing") }}
         <br>
         {{ Form::textarea("experience")  }}
         <br>
