@@ -1,3 +1,12 @@
+Live site found at: flotrain-mocco.rhcloud.comchange	
+
+This site allows users to store trainer profiles in a database. Visitors of the site, will be able to view these trainers, their profile and contact information.
+
+
+
+
+
+
 ## Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)

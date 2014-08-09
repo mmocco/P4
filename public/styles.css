@@ -6,11 +6,18 @@ body {
   color: #5a5a5a;
 }
 
-
+.auth-form{
+	padding:6px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 22%;
+	margin-top: 15%;
+	border: 4px solid #a0ea10;
+}
 
 
 .fillform {
-        padding: 10%;
+        padding-left: 10%;
 
 }
 
@@ -57,7 +64,7 @@ width:auto;
 }
 
 .row {
-	padding-left:60px !important;
+	padding-left:18% !important;
 }
 
 .navbar {

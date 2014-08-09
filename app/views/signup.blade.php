@@ -1,4 +1,7 @@
 
+@extends ('_master')
+
+<div class = "auth-form">
 <h1>Sign up</h1>
 
 {{ Form::open(array('url' => '/signup')) }}
@@ -12,3 +15,4 @@
     {{ Form::submit('Submit') }}
 
 {{ Form::close() }}
+</div>

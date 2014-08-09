@@ -29,13 +29,12 @@ Route::get('/technique', function () {
 
 Route::post('/technique', function () {
 
-	$trainer= Trainer::first();
-	$trainer->review = Input::get('review');
+	$trainer= Trainer::all();
 
 	
 	return View::make('technique')
-		->withKey($trainer);
 
+		->with('trainers', $trainers);
 });
 
 Route::get('/profile',
@@ -50,14 +49,14 @@ Route::post('/profile/',
     array(
         'before' => 'auth', function () {
 
-	$trainer = new Trainer();
+	$trainers = new Trainer();
 
-	$trainer->name = Input::get('name');
-	$trainer->sport = Input::get('sport');
-	$trainer->accomplishments = Input::get('accomplishments');
-	$trainer->experience = Input::get('experience');
-	$trainer->pic = Input::get('pic');
-	$trainer->save();
+	$trainers->name = Input::get('name');
+	$trainers->sport = Input::get('sport');
+	$trainers->accomplishments = Input::get('accomplishments');
+	$trainers->experience = Input::get('experience');
+	$trainers->pic = Input::get('pic');
+	$trainers->save();
 
 	return View::make('fillprofile');
 }));

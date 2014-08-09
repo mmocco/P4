@@ -31,7 +31,7 @@ Welcome
 	<section>
 
 <div class="row">
-  <div class="col-sm-6 col-md-4">
+  <div class="col-xs-6"> <!--col-sm-6 col-md-4"> -->
     <div class="thumbnail">
       <img src="{{ $trainer['pic'] }}" alt="..." class="img-rounded">
       <div class="caption">

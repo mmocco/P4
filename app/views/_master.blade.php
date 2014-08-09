@@ -40,7 +40,7 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="/index.php/technique">Technicians</a></li>
-            <li><a href="/index.php/profile">Edit Your Profile</a></li>
+            <li><a href="/index.php/profile">Add A Profile</a></li>
 	    @if(Auth::check())
 		<li><a href='/index.php/logout'>Log out <strong> {{ Auth::user()->email; }} </strong></a></li>
 	    @else 
