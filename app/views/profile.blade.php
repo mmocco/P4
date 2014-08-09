@@ -53,6 +53,10 @@ Welcome
         <br>
         {{ Form::text("name", Input::old("name"), ["placeholder" => "John Smith"]) }}
         <br>
+	{{ Form::label("Picture") }}
+	<br>
+	{{ Form::text("pic") }}i
+	<br>
         {{ Form::label("Sport") }}
         <br>
         {{ Form::text("sport") }}

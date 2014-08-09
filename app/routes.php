@@ -19,11 +19,11 @@ Route::get('/', function()
 
 Route::get('/technique', function () {
 
-	$trainer= Trainer::first();
+	$trainers= Trainer::all();
 
 	
 	return View::make('technique')
-		->withKey($trainer);
+		->with('trainers', $trainers);
 
 });
 
@@ -56,7 +56,7 @@ Route::post('/profile/',
 	$trainer->sport = Input::get('sport');
 	$trainer->accomplishments = Input::get('accomplishments');
 	$trainer->experience = Input::get('experience');
-	$trainer->comment()->associate(Input::get('comment'));
+	$trainer->pic = Input::get('pic');
 	$trainer->save();
 
 	return View::make('fillprofile');

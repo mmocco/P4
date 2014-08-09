@@ -27,21 +27,30 @@ Welcome
 	</div>
 
 
+	@foreach($trainers as $name => $trainer)
+	<section>
 
 <div class="row">
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
-      <img src="http://i.imgur.com/UtdNc9J.jpg" alt="..." class="img-rounded">
+      <img src="{{ $trainer['pic'] }}" alt="..." class="img-rounded">
       <div class="caption">
-        <h3>Trainer Name</h3>
-        <p>Trainer Info</p>
+        <h3>{{ $trainer['name'] }}</h3>
+	<p>			
+	Experience: {{ $trainer['experience'] }}
+	</p>
+	<p>			
+	Accomplishments: {{ $trainer['accomplishments'] }}
+	</p>
+	
         <p><a href="#" class="btn btn-primary" role="button">Contact</a> <a href="#" class="btn btn-default" role="button">Rate</a></p>
       </div>
     </div>
   </div>
 </div>
-		{{ $trainer->name; }}
-		{{ $trainer->review; }}
+		</section>
+	
+	@endforeach
 
 
 </body>
