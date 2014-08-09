@@ -37,10 +37,10 @@ Welcome
       <div class="caption">
         <h3>{{ $trainer['name'] }}</h3>
 	<p>			
-	Experience: {{ $trainer['experience'] }}
+	Accomplishments and Experience: {{ $trainer['experience'] }}
 	</p>
 	<p>			
-	Accomplishments: {{ $trainer['accomplishments'] }}
+	Contact Info and Wages: {{ $trainer['accomplishments'] }}
 	</p>
 	
       </div>
