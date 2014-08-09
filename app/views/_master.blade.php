@@ -35,7 +35,7 @@
 	      <span class="icon-bar"></span>
 	      <span class="icon-bar"></span>
 	    </a>
-        <a class="navbar-brand" href="/"> FloTrain</a>
+         <a class="navbar-brand" href="/index.php"> FloTrain </a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">

@@ -27,13 +27,21 @@ body {
   right: 0;
   z-index: 10;
   border-bottom: 2px solid #a0ea10;
-  padding-top: 40px !important; 
+  padding-top: 40px !important;
+  margin-left: 60px !important; 
+  margin-right: 20px !important; 
   margin-top: 0px !important;
 }
 
 .navbar-collapse{
 	height: inherit;
 }
+
+.navbar-brand {
+	margin-left:10px !important;
+	font-weight:bold;
+	}
+
 
 .mynav {
 list-style-type: none;
@@ -46,6 +54,10 @@ padding: 0;
 zoom: 1;
 width:auto;
 
+}
+
+.row {
+	padding-left:60px !important;
 }
 
 .navbar {

@@ -55,7 +55,7 @@ Welcome
         <br>
 	{{ Form::label("Picture") }}
 	<br>
-	{{ Form::text("pic") }}i
+	{{ Form::text("pic") }}
 	<br>
         {{ Form::label("Sport") }}
         <br>

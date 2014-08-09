@@ -22,7 +22,7 @@ Welcome
 <body> 
  
 <br><br><br>
-	<div class="page-header">
+	<div class="page-header row">
   		<h1>Trainers Available <small>College Athletes</small></h1>
 	</div>
 
@@ -43,7 +43,6 @@ Welcome
 	Accomplishments: {{ $trainer['accomplishments'] }}
 	</p>
 	
-        <p><a href="#" class="btn btn-primary" role="button">Contact</a> <a href="#" class="btn btn-default" role="button">Rate</a></p>
       </div>
     </div>
   </div>
