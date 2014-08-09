@@ -1,4 +1,4 @@
-Live site found at: flotrain-mocco.rhcloud.com`	
+Live site found at: flotrain-mocco.rhcloud.com	
 
 This site allows users to store trainer profiles in a database. Visitors of the site, will be able to view these trainers, their profile and contact information.
 
